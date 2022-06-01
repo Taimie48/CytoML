@@ -37,6 +37,7 @@ CXX11=`"${R_HOME}/bin/R" CMD config CXX11`
 CXX11STD=`"${R_HOME}/bin/R" CMD config CXX11STD`
 CXX="${CXX11} ${CXX11STD}"
 CXXFLAGS=`"${R_HOME}/bin/R" CMD config CXX11FLAGS`
+SHLIB_CXXLDFLAGS=`"${R_HOME}/bin/R" CMD config SHLIB_CXXLDFLAGS -shared`
 AC_LANG(C++)
 
 CC=`"${R_HOME}/bin/R" CMD config CC`
